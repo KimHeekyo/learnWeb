@@ -1,0 +1,58 @@
+.box {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100% 100%;
+    position: absolute;
+}
+
+#red {
+    background-color: red;
+    left: 10px; top: 10px;
+}
+
+#green {
+    background-color: green;
+    right:10px; top:10px;
+}
+
+#yellow {
+    background-color: yellow;
+    left:10px; bottom: 10px;
+}
+
+#blue {
+    background-color: blue;
+    right: 10px; bottom: 10px;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: burlywood;
+}
+
+.left {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 50px;
+    height: 800px;
+    background-color: pink;
+}
+
+.ellipsis {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text" name="search">
+        <input type="submit" value="제출">
+        <br><br>
+        <input type="button" value="누르면 50% 확률로 100억"><br>
+        <br>
+        <input type="text" name="text" value="text"><br>
+        <input type="password" name="password" value="password"><br>
+        <input type="file" name="file" value="file"><br>
+        <input type="checkbox" name="checkbox" value="checkbox"><br>
+        <input type="radio" name="radio" value="radio"><br>
+
+        <input type="hidden" name="hidden" value="hidden"><br>
+
+        <input type="button" value="button"><br>
+        <input type="reset" value="reset"><br>
+        <input type="submit" value="submit"><br>
+        <input type="image" src="http://placehold.it/100x100"><br><br>
+
+        <select>
+            <option>김밥</option>
+            <option>떡볶이</option>
+            <option>순대</option>
+            <option>어묵</option>
+        </select>
+        <br><br>
+        
+        <label for="name">이름</label>
+        <input id="name" type="text"> 
+
+        <br><br>
+        
+        <label for="name">생년월일</label>
+        <select>
+            <option>년도</option>
+        </select>
+
+        <select>
+            <option>월</option>
+        </select>
+
+        <select>
+            <option>일</option>
+        </select>
+
+        <br><br>
+
+        <label for="name">성별</label>
+        <input id="man" type="radio" name="gender" value="m">
+        <label for="man">남</label>
+        <input id="woman" type="radio" name="gender" value="w">
+        <label for="woman">여</label>
+
+        <br><br>
+
+        <table>
+            <tr>
+                <td><label for="username">이름</label></td>
+                <td><input id="username" type="text" name="username"></td>
+                </tr>
+                <tr>
+                <td>성별</td>
+                <td>
+                    <input id="man" type="radio" name="gender" value="m">
+                    <label for="man">남자</label>
+                    <input id="woman" type="radio" name="gender" value="w">
+                    <label for="woman">여자</label>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="가입">
+
+        <br><br>
+
+        <select multiple="multiple">
+                <option>김밥</option>
+                <option>떡볶이</option>
+                <option>순대</option>
+                <option>어묵</option>
+        </select>
+
+        <br><br>
+
+        <select>
+            <optgroup label="HTML5">
+                <option>Multimedia Tag</option>
+                <option>Connectivity</option>
+                <option>Device Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option>Animation</option>
+                <option>3D Transform</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+
+        <fieldset>
+            <legend>입력 양식</legend>
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input id="name" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">이메일</label></td>
+                    <td><input id="mail" type="email"></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </fieldset>
+
+
+        
+    </form>
+
+    <br><br>
+
+    <div style="width:50%;height: 100px;background-color: aqua;display:block;float:right">
+        div a
+        <div style="width:50%;height: 30px;background-color: rgb(21, 255, 0);">
+            div c
+        </div>
+    </div>
+    <div style="width:100%;height: 100px;background-color: rgb(255, 145, 0);">
+    div b
+    </div>
+
+    <br><br>
+
+
+    <!-- 상단, 가로 100% 세로 100px -->
+    <div style="display: block;float: left;width:100%;height: 100px;background-color: bisque;"></div>
+    <!-- 중간, 가로 100% 세로 500px -->
+    <div style="display: block;float: left;width:100%;height: 500px;background-color: rgb(0, 26, 255);">
+        <div style="display: block;float: left;width:50%;height: 400px;background-color: rgb(0, 247, 255);"></div>
+        <div style="display: block;float: left;width:50%;height: 400px;background-color: rgb(0, 162, 255);"></div>
+    </div>
+    <!-- 하단, 가로 100% 세로 100px -->
+    <div style="display: block;float: left;width:100%;height: 100px;background-color: rgb(255, 0, 0);"></div>
+
+    <br><br>
+
+    <div>
+        <h1>HTML5 기본</h1>
+    </div>
+    <div>
+        <ul>
+            <li><a herf="#">메뉴 - 1</a></li>
+            <li><a herf="#">메뉴 - 2</a></li>
+            <li><a herf="#">메뉴 - 3</a></li>
+        </ul>
+    </div>
+    <div>
+        <div>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div>
+            <span>서울특별시 강서구 내발산동</span>
+        </div>
+    </div>
+
+    <br><br>
+
+    <header>
+        <h1>HTML5 기본</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴 - 1</a></li>
+            <li><a href="#">메뉴 - 2</a></li>
+            <li><a href="#">메뉴 - 3</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h1>기사 제목입니다</h1>
+            <p>기사 내용입니다</p>
+        </article>
+        <article>
+            <h1>기사2 제목입니다</h1>
+            <p>기사2 내용입니다</p>
+        </article>
+    </section>
+    <footer>
+        <address>서울특별시 강서구 마곡동</address>
+    </footer>
+
+
+</body>
+</html>

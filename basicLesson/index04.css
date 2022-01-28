@@ -1,0 +1,22 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+
+}
+.divblock {
+    display: block;
+    height: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.divinline {
+    display: inline;
+    border: 1px solid black;
+    margin: 5px;
+}

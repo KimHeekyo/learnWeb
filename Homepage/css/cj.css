@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.back {
+    margin-bottom: 30px;
+}
+
+.back a {
+    text-decoration: none;
+}
+
+.container {
+    padding: 10px;
+}
+
+.ct1 {
+    height: 420px;
+}
+
+.ct2 {
+    margin-left: 400px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 10px;
+}
+
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.large-font {
+    font-size: 48px;
+}
+
+.xlarge-font {
+    font-size: 64px;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.product {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#rice {
+    margin-right: 30px;
+}
+
+.food {
+    float: left;
+    width: 50%;
+    height: 100%;
+}

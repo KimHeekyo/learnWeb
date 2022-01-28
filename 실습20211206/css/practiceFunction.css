@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    height: 20px;
+    padding: 2px;
+    border: 0 solid lightgray;
+}
+
+.panel {
+    display: none;
+    width: 100%;
+    height: 100px;
+}
+
+.active {
+    background-color: lightslategray;
+    border: 0 solid lightslategray;
+}

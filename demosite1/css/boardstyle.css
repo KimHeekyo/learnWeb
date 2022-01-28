@@ -1,0 +1,29 @@
+.title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.head {
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+}
+
+.foot {
+    text-align: center;
+}
+
+#tb {
+    width: 300px;
+}
+
+#cb {
+    width: 50%;
+    height: 30%;
+}
+
+td {
+    padding: 7px;
+}

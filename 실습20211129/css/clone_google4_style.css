@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dbg {
+    border: 0px dotted red;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    margin-top: 0.5em;
+    overflow: hidden;
+}
+
+.navbar > .navbar-left {
+    float: left;
+    margin-left: 1em;
+    line-height: 50px;
+}
+
+.navbar > .navbar-right {
+    float: right;
+    margin-left: 1em;
+    line-height: 50px;
+}
+
+.navbar li {
+    list-style-type: none;
+    float: left;
+    margin: 0 0.5em;
+}
+
+li> a {
+    text-decoration: none;
+    color: black;
+}
+
+li > a:visited {
+    color: black;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
+.gb_app {
+    width: 48px;
+    height: 48px;
+    border: 0px solid black;
+    border-radius: 24px;
+}
+
+.gb_app:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+#profileimg {
+    width: 48px;
+    height: 48px;
+    border: 0px solid #000;
+    border-radius: 24px;
+}
+
+.wrapper {
+    height: calc(100vh - (11vh + 50px + 1em));
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    overflow: hidden;
+}
+
+.search {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    border: 1px solid #cdcdcd;
+    border-radius: 25px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.search-bar:hover {
+    box-shadow: 0 1px 6px rgb(33 33 33 / 28%);
+}
+
+.search-bar i {
+    width: 15px;
+    height: 15px;
+    color: #a5a5a5;
+}
+
+.search-bar input {
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-buttons button {
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    color: #404040;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 16px;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.search-buttons button:hover {
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 1px 6px rgb(33 33 33 / 28%);
+}
+
+.offered-in {
+    margin-top: 50px;
+}
+
+.offered-in a {
+    text-decoration: none;
+    color: black;
+}
+
+.offered-in:visited {
+    color: black;
+}
+
+footer {
+    bottom: 0;
+    background-color: #eeeeee;
+    height: 11vh;
+}
+
+.location {
+    padding: 1em;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.footmenu ul > li {
+    list-style-type: none;
+    float: left;
+    margin: 0 1.2em;
+}
+
+.footmenu-left {
+    float: left;
+    height: 4vh;
+    padding-top: 0.3em;
+}
+
+.footmenu-right {
+    float: right;
+    height: 4vh;
+    padding-top: 0.3em;
+}

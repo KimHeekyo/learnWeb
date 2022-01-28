@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.back {
+    margin-bottom: 30px;
+}
+
+.back a {
+    text-decoration: none;
+}

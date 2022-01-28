@@ -1,0 +1,130 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ad {
+    background-color: black;
+    width: 60%;
+    height: 150px;
+    float: left;
+}
+
+.tab {
+    background-color: beige;
+    width: 60%;
+    height: 50px;
+    float: left;
+}
+
+.article {
+    float: left;
+    background-color: burlywood;
+    width: 60%;
+    height: 450px;
+}
+
+.bottom {
+    background-color: beige;
+    width: 60%;
+    height: 50px;
+    float: left;
+}
+
+.box1 {
+    float: left;
+    background-color: cadetblue;
+    width: 40%;
+    height: 450px;
+}
+
+.box2 {
+    float: left;
+    background-color: chartreuse;
+    width: 60%;
+    height: 450px;
+}
+
+.p1 {
+    float: left;
+    background-color: orange;
+    width: 100%;
+    height: 150px;
+}
+
+.p2 {
+    float: left;
+    background-color: coral;
+    width: 100%;
+    height: 150px;
+}
+
+.p3 {
+    float: left;
+    background-color: brown;
+    width: 100%;
+    height: 150px;
+}
+
+.ar1 {
+    float: left;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 150px;
+}
+
+.ar2 {
+    float: left;
+    background-color: blue;
+    width: 100%;
+    height: 150px;
+}
+
+.ar3 {
+    float: left;
+    background-color: skyblue;
+    width: 100%;
+    height: 150px;
+}
+
+.a {
+    float: left;
+    background-color: tan;
+    width: 50%;
+    height: 150px;
+}
+
+.b {
+    float: left;
+    background-color: teal;
+    width: 50%;
+    height: 150px;
+}
+
+.c {
+    float: left;
+    background-color: thistle;
+    width: 50%;
+    height: 150px;
+}
+
+.d {
+    float: left;
+    background-color: tomato;
+    width: 50%;
+    height: 150px;
+}
+
+.e {
+    float: left;
+    background-color: indianred;
+    width: 50%;
+    height: 150px;
+}
+
+.f {
+    float: left;
+    background-color: indigo;
+    width: 50%;
+    height: 150px;
+}

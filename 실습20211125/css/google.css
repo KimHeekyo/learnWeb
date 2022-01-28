@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    width: 100%;
+    height: 7vh;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+}
+
+.top {
+    padding: 200px 10px 10px 0;
+    text-align: center;
+}
+
+.mid {
+    text-align: center;
+    padding: 0px 0px 10px 0px;
+}
+
+
+.serchbutton {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.lucky {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.bottom {
+    border-bottom: 0.1px solid black;
+    background-color: lightgray;
+    width: 100%;
+    height: 5vh;
+}
+
+.bottom2 {
+    background-color: lightgray;
+    width: 100%;
+    height: 5vh;
+}
+
+.kor {
+    float: left;
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.ad {
+    float: left;
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.business {
+    float: left;
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.serch1 {
+    float: left;
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.set {
+    float: right;
+    margin-top: 13px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.info2 {
+    float: right;
+    margin-top: 13px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.privit {
+    float: right;
+    margin-top: 13px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.info {
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 15px;
+    
+}
+
+.store {
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.gmail {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.image {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.menu {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.login {
+    float: right;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 8px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-top: 15px;
+    color: white;
+}

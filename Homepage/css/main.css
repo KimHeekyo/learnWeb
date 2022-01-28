@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main {
+    height: 569px;
+    background: skyblue;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+
+}
