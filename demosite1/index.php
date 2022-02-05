@@ -59,7 +59,8 @@ require_once './util/loginchk.php';
         <!-- 여기까지 login modal -->
       <?php 
       } else {
-        echo $_SESSION['username']; ?>
+        echo $_SESSION['username'];
+      ?>
         <button?><a href="./membership/user_logout.php">logout</a></button>
       <?php
       }// end of if(!$chk_login)

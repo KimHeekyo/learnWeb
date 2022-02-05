@@ -25,7 +25,6 @@ require_once './util/login.php';
             <ul class="login">
                 <li class='logintab'><a href="loginform.php">로그인</a></li>
                 <li class='logintab'><a href="./users/users_insert.php">회원가입</a></li>
-                <li class='logintab'><a href="#">내정보</a></li>
             </ul>
         </div>
 
@@ -33,7 +32,7 @@ require_once './util/login.php';
             <div class="nav_menu">
                 <div>
                     <ul>
-                        <li class="menu"><a href="#">전체</a></li>
+                        <li class="menu"><a href="main.php">전체</a></li>
                         <li class="menu"><a href="#">메뉴</a></li>
                         <li class="menu"><a href="#">메뉴</a></li>
                         <li class="menu"><a href="#">메뉴</a></li>
@@ -53,6 +52,7 @@ require_once './util/login.php';
 
     <div id="container">
         <form action="loginform_process.php" method="POST" class="login_form">
+            <div><h1>로그인</h1></div><br>
             <label></label><input type="text" name="username" class="login_box" placeholder="  아이디" required /><br>
             <label><input type="password" name="password" class="login_box" placeholder="  비밀번호" required /><br>
             <button type="submit" class="login_box" id="login_btn"><b>로그인</b></button><br>
