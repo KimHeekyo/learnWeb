@@ -15,7 +15,7 @@ $sql = "CREATE TABLE users (
     `phone_num` VARCHAR(13) NOT NULL,
     `email` VARCHAR(50) NOT NULL,
     `registdate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `lastdate` DATETIME NULL,
+    `lastdate` DATETIME NULL ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (`id`)
     ) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci";
 

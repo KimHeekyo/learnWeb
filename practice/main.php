@@ -35,13 +35,15 @@ require_once './util/login.php';
                 <div>
                     <ul>
                         <li class="menu"><a href="main.php">전체</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
+                        <li class="menu"><a href="?genre=액션">액션</a></li>
+                        <li class="menu"><a href="?genre=코미디">코미디</a></li>
+                        <li class="menu"><a href="?genre=로맨스">로맨스</a></li>
+                        <li class="menu"><a href="?genre=드라마">드라마</a></li>
+                        <li class="menu"><a href="?genre=판타지">판타지</a></li>
                     </ul>
                 </div>
                 <div id="search_box">
-                    <form action="" method="GET">
+                    <form action="serch_result.php" method="GET">
                         <input type="text" name="" size="30" class="search_bar" required="required">
                         <button class="search_btn">검색</button>
                     </form>
@@ -65,20 +67,23 @@ require_once './util/login.php';
     $row = $result->fetch_assoc();
 ?>
             <ul class="login">
+
                 <li class='logintab'><?=$row['nickname']?>님</li>
                 <li class='logintab'><a href="./users/users_logout.php">로그아웃</a></li>
-                <li class='logintab'><a href="./users/users_info.php">내정보</a></li>
+                <li class='logintab'><a href="./users/users_info.php?id=<?=$row['id']?>">MY</a></li>
             </ul>
         </div>
 
         <div class="header_nav">
             <div class="nav_menu">
-                <div>
+                <div class="tab">
                     <ul>
                         <li class="menu"><a href="main.php">전체</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
+                        <li class="menu"><a href="?genre=액션">액션</a></li>
+                        <li class="menu"><a href="?genre=코미디">코미디</a></li>
+                        <li class="menu"><a href="?genre=로맨스">로맨스</a></li>
+                        <li class="menu"><a href="?genre=드라마">드라마</a></li>
+                        <li class="menu"><a href="?genre=판타지">판타지</a></li>
                     </ul>
                 </div>
                 <div id="search_box">
@@ -99,23 +104,25 @@ require_once './util/login.php';
 
     <div id="container">
         <?php
-            $sql = "SELECT * FROM movie";
-            $resultset = $conn->query($sql);
+            if(isset($_GET['genre']) && $_GET['genre']!=''){
+                $genre=$_GET['genre'];
+                $sql = "SELECT * FROM movie WHERE m_genre LIKE '%".$genre."%'";
+            }else {
+                $sql = "SELECT * FROM movie";
+            }
             
+            $resultset = $conn->query($sql);
             if ($resultset->num_rows > 0) {
-            $row = $resultset->fetch_assoc();
-
             while ($row = $resultset->fetch_assoc()) {
         ?>
         <div class="card">
-            <a href="movie_info.php"><img src="./poster/<?=$row['m_poster']?>" width="230px;" height="345px;"><a href="#">
+            <a href="movie_info.php?id=<?=$row['id']?>"><img src="./poster/<?=$row['m_poster']?>" width="230px;" height="345px;"></a>
             <div class="ct">
-            <a href="movie_info.php"><h4><?=$row['m_title']?></h4></a>
+            <a href="movie_info.php?id=<?=$row['id']?>"><h4><?=$row['m_title']?></h4></a>
                 <p><?=$row['m_date']?> 개봉</p>
                 <button class="ticket"><a href="#">예매하기</a></button>
             </div>
         </div>
-
         <?php
             }
         }

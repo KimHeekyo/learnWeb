@@ -38,10 +38,33 @@ if($chk_login){
   $resultset = $conn->query($sql);
 
   if ($resultset->num_rows > 0) {
-    echo "<table><tr><th>ID</th><th>USERNAME</th><th>CellPhone</th><th>E-Mail</th><th>Regist Date</th><th>Last Login</th><th>Status</th><th>수정</th><th>삭제</th></tr>";
+    echo
+    "<table>
+        <tr>
+          <th>ID</th>
+          <th>USERNAME</th>
+          <th>CellPhone</th>
+          <th>E-Mail</th>
+          <th>Regist Date</th>
+          <th>Last Login</th>
+          <th>Status</th>
+          <th>수정</th>
+          <th>삭제</th>
+        </tr>";
 
     $row = $resultset->fetch_assoc();
-    echo "<tr><td>" . $row['id'] . "</td><td>" . $row['username'] . "</td><td>" . $row['cellphone'] . "</td><td>" . $row['email'] . "</td><td>" . $row['registdate'] . "</td><td>" . $row['lastdate'] . "</td><td>" . $row['status'] . "</td><td><a href='user_update.php?id=" . $row['id'] . "'>수정</a></td><td><a href='user_deleteprocess.php?id=" . $row['id'] . "'>삭제</a></td></tr>";
+    echo
+    "<tr>
+      <td>" . $row['id'] . "</td>
+      <td>" . $row['username'] . "</td>
+      <td>" . $row['cellphone'] . "</td>
+      <td>" . $row['email'] . "</td>
+      <td>" . $row['registdate'] . "</td>
+      <td>" . $row['lastdate'] . "</td>
+      <td>" . $row['status'] . "</td>
+      <td><a href='user_update.php?id=" . $row['id'] . "'>수정</a></td>
+      <td><a href='user_deleteprocess.php?id=" . $row['id'] . "'>삭제</a></td>
+    </tr>";
     echo "</table>";
   }
   ?>

@@ -33,9 +33,11 @@ require_once './util/login.php';
                 <div>
                     <ul>
                         <li class="menu"><a href="main.php">전체</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
-                        <li class="menu"><a href="#">메뉴</a></li>
+                        <li class="menu"><a href="main.php?genre=액션">액션</a></li>
+                        <li class="menu"><a href="main.php?genre=코미디">코미디</a></li>
+                        <li class="menu"><a href="main.php?genre=로맨스">로맨스</a></li>
+                        <li class="menu"><a href="main.php?genre=드라마">드라마</a></li>
+                        <li class="menu"><a href="main.php?genre=판타지">판타지</a></li>
                     </ul>
                 </div>
                 <div id="search_box">
