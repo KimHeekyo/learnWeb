@@ -1,6 +1,6 @@
 <?php
 
-$practicedb = 'practice';
+$practicedb = 'localhost';
 
 $dbservername = 'localhost';
 $dbusername = $practicedb;
