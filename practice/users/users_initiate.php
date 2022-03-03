@@ -12,7 +12,7 @@ $sql = "CREATE TABLE users (
     `username` VARCHAR(20) NOT NULL,
     `nickname` VARCHAR(20) NOT NULL,
     `password` VARCHAR(256) NOT NULL,
-    `phone_num` VARCHAR(13) NOT NULL,
+    `phone_num` VARCHAR(20) NOT NULL,
     `email` VARCHAR(50) NOT NULL,
     `registdate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `lastdate` DATETIME NULL ON UPDATE CURRENT_TIMESTAMP,

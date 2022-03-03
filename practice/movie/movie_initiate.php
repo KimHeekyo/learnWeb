@@ -8,7 +8,7 @@ if($conn->query($sql) == TRUE) {
 }
 
 $sql = "CREATE TABLE movie (
-    `id` INT(6) NOT NULL AUTO_INCREMENT,
+    `m_id` INT(6) NOT NULL AUTO_INCREMENT,
     `m_poster` VARCHAR(200) NULL,
     `m_title` VARCHAR(20) NOT NULL,
     `m_director` VARCHAR(20) NOT NULL,
@@ -16,9 +16,9 @@ $sql = "CREATE TABLE movie (
     `m_genre` VARCHAR(50) NOT NULL,
     `m_country` VARCHAR(50) NOT NULL,
     `m_time` VARCHAR(20) NOT NULL,
-    `m_story` VARCHAR(500) NOT NULL,
+    `m_story` VARCHAR(2000) NOT NULL,
     `m_audience` VARCHAR(20) NOT NULL,
-    PRIMARY KEY (`id`)
+    PRIMARY KEY (`m_id`)
     ) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci";
 
 if ($conn->query($sql) == TRUE) {

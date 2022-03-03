@@ -1,10 +1,12 @@
 <?php
 
 $practicedb = 'practice';
+// $practicedb = 'kimheekyo'; // for dothome
 
 $dbservername = 'localhost';
 $dbusername = 'root';
 $dbpassword = '';
+// $dbpassword = 'gmlry1!tmfdud'; // for dothome
 $dbname = $practicedb;
 
 require_once "../util/utility.php";
@@ -48,7 +50,8 @@ if ($conn->query($sql) == TRUE) {
     echo outmsg(CREATEDB_FAIL);
 }
 
-$sql = "GRANT ALL PRIVILEGES ON `" . $dbname . "`.* TO '" . $dbname . "'@'%';  ";
+// $sql = "GRANT ALL PRIVILEGES ON `" . $dbname . "`.* TO '" . $dbname . "'@'%';  ";
+$sql = "GRANT ALL ON *.* TO '{$dbname}'@'localhost' IDENTIFIED BY '{$dbname}' WITH GRANT OPTION";
 if ($conn->query($sql) == TRUE) {
     if (DBG) echo outmsg(GRANTUSER_SUCCESS);
 } else {

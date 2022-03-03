@@ -64,7 +64,7 @@ if ($conn->query($sql) == TRUE) {
   echo outmsg(CREATEUSER_FAIL);
 }
 // 2. 리소스 제한 없이 사용하도록 권한을 부여하고,
-$sql = "GRANT USAGE ON *.* TO '" . $dbname . "'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0";
+$sql = "GRANT USAGE ON *.* TO '" . $dbname . "'@'%' REQUIRE NONE WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0";
 if ($conn->query($sql) == TRUE) {
   if (DBG) echo outmsg(LIMITRSC_SUCCESS);
 } else {
@@ -78,7 +78,10 @@ if ($conn->query($sql) == TRUE) {
   echo outmsg(CREATEDB_FAIL);
 }
 // 4. 생성된 사용자 계정에 데이터베이스에 대한 모든 권한을 부여 
-$sql = "GRANT ALL PRIVILEGES ON `" . $dbname . "`.* TO '" . $dbname . "'@'%';  ";
+// $sql = "GRANT ALL PRIVILEGES ON . TO '" .$dbusername. "'@'%';  ";
+$sql = "GRANT ALL ON *.* TO '{$dbname}'@'localhost' IDENTIFIED BY '{$dbname}' WITH GRANT OPTION";
+// $sql = "GRANT ALL PRIVILEGES ON `" . $dbname . "`.* TO '" . $dbname . "'@'%';  "; // 기존의 것
+// $sql = "GRANT ALL ON . TO '{$dbname}'@'localhost' IDENTIFIED BY '{$dbname}' WITH GRANT OPTION";
 if ($conn->query($sql) == TRUE) {
   if (DBG) echo outmsg(GRANTUSER_SUCCESS);
 } else {
